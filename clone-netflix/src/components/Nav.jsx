@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Nav.css";
+import "../App.css";
 function Nav() {
   const [show, handleShow] = useState(false);
   // When scroll is a 100px (down in page) we add the navbar visibilty

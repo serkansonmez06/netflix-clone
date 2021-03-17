@@ -5,3 +5,152 @@
 .app {
     background-color: #111;
 }
+
+
+/* Positioning banner and color */
+
+.banner {
+    color: white;
+    object-fit: contain;
+    height: 448px;
+}
+
+
+/* Positioning banner content */
+
+.banner__contents {
+    margin-left: 30px;
+    padding-top: 140px;
+    height: 190px;
+}
+
+
+/* Styling banner title */
+
+.banner__title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+
+
+/* Styling banner description font*/
+
+.banner__description {
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    max-width: 360px;
+    height: 80px;
+}
+
+.banner__button {
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    background-color: rgba(51, 51, 51, 0.5);
+    padding-bottom: 0.5rem;
+}
+
+.banner__button:hover {
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+}
+
+
+/* Creates a fade in banner bottom effect */
+
+.banner--fateBottom {
+    height: 7.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    height: 30px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.nav__black {
+    background-color: #111;
+}
+
+.nav__logo {
+    position: fixed;
+    left: 20px;
+    width: 80px;
+    object-fit: contain;
+}
+
+.nav__avatar {
+    position: fixed;
+    right: 20px;
+    width: 30px;
+    object-fit: contain;
+}
+
+
+/* Positioning rows to right */
+
+.row {
+    margin: 20px;
+    color: white;
+}
+
+
+/* Positioning in flex */
+
+.row__posters {
+    display: flex;
+    overflow-y: hidden;
+    /* Makes title stay while scrolling */
+    overflow-x: scroll;
+    /*added scrollbar to x */
+    padding: 20px;
+}
+
+.row__posters::-webkit-scrollbar {
+    /*hidden scrollbar on x */
+    /* Removes scrollbar, but keeps functionality */
+    display: none;
+}
+
+
+/* Positioning of rows */
+
+.row__poster {
+    object-fit: contain;
+    width: 100%;
+    max-height: 100px;
+    margin-right: 10px;
+    /* Delay effect */
+    transition: transform 450ms;
+}
+
+.row__poster:hover {
+    transform: scale(1.08);
+}
+
+.row__posterLarge {
+    max-height: 250px;
+}
+
+.row__posterLarge:hover {
+    transform: scale(1.09);
+}
