@@ -154,3 +154,12 @@
 .row__posterLarge:hover {
     transform: scale(1.09);
 }
+
+@media screen and (max-width:500px) {
+    .row__poster {
+        width: 300px;
+    }
+    .row__posterLarge {
+        width: 300px;
+    }
+}
