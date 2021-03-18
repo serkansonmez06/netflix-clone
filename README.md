@@ -8,15 +8,15 @@ This is Netflix-clone app. User can have similar netflix user interface experien
 
 contents :
 
-Netflix Originals
-Tranding Now
-Top Rated
-Action movies
-Comedy movies
-Comedy movies
-Horror movies
-Romance Movies
-Documentaries
+--Netflix Originals
+--Tranding Now
+--Top Rated
+--Action movies
+--Comedy movies
+--Comedy movies
+--Horror movies
+--Romance Movies
+--Documentaries
 
 Used tmdb Api for this project.
 
