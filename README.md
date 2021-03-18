@@ -1,4 +1,3 @@
-# netflix-clone
 
 # netflix-clone-(React-firebase)
 
