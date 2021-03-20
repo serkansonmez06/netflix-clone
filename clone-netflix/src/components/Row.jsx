@@ -61,20 +61,25 @@ function Row({ title, fetchUrl, isLargeRow }) {
       <div className="row__posters">
         {/* several row poster */}
         {/* Looping through movies array API */}
-        {movies.map((movie) => (
-          <img
-            key={movie.id}
-            onClick={() => handleClick(movie)}
-            // Setting up onClick event for trailer
-            // All poster same size (row__poster) except if you are larger row, then use
-            // isLargeRow
-            className={`row__poster ${isLargeRow && "row__posterLarge"}`}
-            src={`${base_url}${
-              isLargeRow ? movie.poster_path : movie.backdrop_path
-            }`}
-            alt={movie.name}
-          />
-        ))}
+        {movies.map(
+          (movie) =>
+            // this conditon will prevent dead link to display on the screen
+            ((isLargeRow && movie.poster_path) ||
+              (!isLargeRow && movie.backdrop_path)) && (
+              <img
+                key={movie.id}
+                onClick={() => handleClick(movie)}
+                // Setting up onClick event for trailer
+                // All poster same size (row__poster) except if you are larger row, then use
+                // isLargeRow
+                className={`row__poster ${isLargeRow && "row__posterLarge"}`}
+                src={`${base_url}${
+                  isLargeRow ? movie.poster_path : movie.backdrop_path
+                }`}
+                alt={movie.name}
+              />
+            )
+        )}
       </div>
       {/* Embedding youtube movie trailers to show */}
       {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}

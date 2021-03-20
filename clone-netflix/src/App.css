@@ -12,6 +12,7 @@
 .banner {
     color: white;
     object-fit: contain;
+    /* object stay in center */
     height: 448px;
 }
 

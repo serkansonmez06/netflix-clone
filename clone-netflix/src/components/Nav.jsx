@@ -4,14 +4,20 @@ function Nav() {
   const [show, handleShow] = useState(false);
   // When scroll is a 100px (down in page) we add the navbar visibilty
   // if not remove visibility on navbar
+
+  const transitionNavBar = () => {
+    if (window.scrollY > 100) {
+      handleShow(true);
+    } else {
+      handleShow(false);
+    }
+  };
+
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
-        handleShow(true);
-      } else handleShow(false);
-    });
+    window.addEventListener("scroll", transitionNavBar);
+
     return () => {
-      window.removeEventListener("scroll");
+      window.removeEventListener("scroll", transitionNavBar);
     };
   }, []);
 

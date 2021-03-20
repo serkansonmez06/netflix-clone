@@ -10,6 +10,8 @@
     "movie-trailer": "^2.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-router": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-youtube": "^7.13.1",
     "web-vitals": "^1.1.1"
@@ -37,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "redux-devtools": "^3.7.0"
   }
 }
