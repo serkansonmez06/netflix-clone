@@ -1,12 +1,12 @@
-
-# netflix-clone-(React-firebase)
+# netflix-clone-(React-redux-firebase)
 
 deployed on firebase please click ==> https://netflix-clone-c0da9.web.app/
 
-This is Netflix-clone app. User can have similar netflix user interface experience with the app. User can click any movie image and if there is youtube trailer, it will play it after a click. if user want to stop or get rid of the trailer, user can click back to image and trailer will disappear. Banner will display the netflix original movie/show
+This is Netflix-clone app. User can create profile with google authentication. User can log in and log out. User can have similar netflix user interface experience with the app. User can click any movie image and if there is youtube trailer, it will play it after a click. if user want to stop or get rid of the trailer, user can click back to image and trailer will disappear. Banner will display the netflix original movie/show
 
 contents :
 
+--Login/Logout
 --Netflix Originals
 --Tranding Now
 --Top Rated
@@ -28,6 +28,8 @@ dependencies:
     "movie-trailer": "^2.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-router": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-youtube": "^7.13.1",
     "web-vitals": "^1.1.1"
