@@ -3,6 +3,7 @@ import Nav from "../components/Nav";
 import { useSelector } from "react-redux";
 import { selectUser } from "../features/userSlice";
 import { auth } from "../firebase";
+import PlansScreen from "../components/PlansScreen";
 import "../App.css";
 
 function ProfileScreen() {
@@ -18,8 +19,12 @@ function ProfileScreen() {
             alt=""
           />
           <div className="profileScreen__details">
-            <h2>{user.email}</h2>
+            <h2>
+              <span className="userNamespan">User's Email: </span>
+              {user.email}
+            </h2>
             <div className="profileScreen__plans">
+              <PlansScreen />
               <h3>Plans</h3>
               <p></p>
               <button

@@ -13,3 +13,5 @@ const requests = {
 };
 
 export default requests
+
+// fetchNetflixOriginals: `/discover/tv?api_key=${"1f2772737e04d4aa220fa16ef9e1e070"}&with_networks=213`,

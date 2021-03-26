@@ -2,11 +2,12 @@
 
 deployed on firebase please click ==> https://netflix-clone-c0da9.web.app/
 
-This is Netflix-clone app. User can create profile with google authentication. User can log in and log out. User can have similar netflix user interface experience with the app. User can click any movie image and if there is youtube trailer, it will play it after a click. if user want to stop or get rid of the trailer, user can click back to image and trailer will disappear. Banner will display the netflix original movie/show
+This is Netflix-clone app. User can create profile with google authentication. User can log in and log out. User can have similar netflix user interface experience with the app. User can click any movie image and if there is youtube trailer, it will display and play automatically it after a click. if user want to stop or get rid of the trailer, user can click back to image and trailer will disappear. Banner will display the Tranding Now movie/show. User can select a plan from his/her profile. After clicking a plan web browser will direct you to stripe payment window. User can make payment through checkout.stripe(enter credit card). when the transaction completed, web browser will go back to user's profile automatically.
 
 contents :
 
 --Login/Logout
+--Stripe payment
 --Netflix Originals
 --Tranding Now
 --Top Rated
@@ -21,22 +22,23 @@ Used tmdb Api for this project.
 
 dependencies:
 
-    "@reduxjs/toolkit": "^1.5.0",
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.5",
-    "@testing-library/user-event": "^12.8.3",
-    "axios": "^0.21.1",
-    "firebase": "^8.3.1",
-    "movie-trailer": "^2.1.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-redux": "^7.2.2",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "react-youtube": "^7.13.1",
-    "redux-devtools-extension": "^2.13.9",
-    "web-vitals": "^1.1.1"
+     "@reduxjs/toolkit": "^1.5.0",
+        "@stripe/stripe-js": "^1.13.2",
+        "@testing-library/jest-dom": "^5.11.9",
+        "@testing-library/react": "^11.2.5",
+        "@testing-library/user-event": "^12.8.3",
+        "axios": "^0.21.1",
+        "firebase": "^8.3.1",
+        "movie-trailer": "^2.1.0",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "react-redux": "^7.2.2",
+        "react-router": "^5.2.0",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "4.0.3",
+        "react-youtube": "^7.13.1",
+        "redux-devtools-extension": "^2.13.9",
+        "web-vitals": "^1.1.1"
 
 Setup To run this project, install it locally using npm:
 

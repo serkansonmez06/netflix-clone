@@ -97,6 +97,7 @@
     left: 20px;
     width: 80px;
     object-fit: contain;
+    cursor: pointer;
 }
 
 .nav__avatar {
@@ -104,6 +105,7 @@
     right: 20px;
     width: 30px;
     object-fit: contain;
+    cursor: pointer;
 }
 
 
@@ -124,6 +126,7 @@
     overflow-x: scroll;
     /*added scrollbar to x */
     padding: 20px;
+    cursor: pointer;
 }
 
 .row__posters::-webkit-scrollbar {
@@ -146,10 +149,12 @@
 
 .row__poster:hover {
     transform: scale(1.08);
+    cursor: pointer;
 }
 
 .row__posterLarge {
     max-height: 250px;
+    cursor: pointer;
 }
 
 .row__posterLarge:hover {
@@ -376,4 +381,34 @@
 .profileScreen__plans>img {
     border-bottom: 1px solid #282c2d;
     padding-bottom: 10px;
+}
+
+.plansScreen__plan {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    opacity: 0.8;
+    color: #fff;
+}
+
+.plansScreen__plan:hover {
+    opacity: 1;
+}
+
+.plansScreen__plan>button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.plansScreen__plan--disable>button {
+    background-color: gray !important;
+}
+
+.userNamespan {
+    color: black
 }

@@ -46,7 +46,7 @@ function SignUpScreen() {
         <input ref={emailRef} placeholder="Email" type="email" />
         <input ref={passwordRef} placeholder="Password" type="password" />
         <button type="submit" onClick={signIn}>
-          Sing In
+          Sign In
         </button>
 
         <h4>
