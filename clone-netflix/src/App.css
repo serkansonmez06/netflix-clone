@@ -66,6 +66,7 @@
     background-color: #e6e6e6;
     transition: all 0.2s;
     outline: none;
+    cursor: pointer;
 }
 
 
@@ -177,6 +178,7 @@
     width: 150px;
     object-fit: contain;
     padding-left: 20px;
+    cursor: pointer;
 }
 
 .loginScreen__button {
@@ -250,6 +252,7 @@
     background-color: red;
     border: none;
     overflow: auto;
+    cursor: pointer;
 }
 
 .loginScreen__input {
@@ -352,6 +355,7 @@
 .signupScreen__link:hover {
     cursor: pointer;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 300px) {
