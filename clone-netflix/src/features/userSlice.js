@@ -25,6 +25,6 @@ export const {
 
 
 
-export const selectUser = state => state.user.user;
+export const selectUser = state => state.user.user; //will get the user from global state
 
 export default userSlice.reducer;

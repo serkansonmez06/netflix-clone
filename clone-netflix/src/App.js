@@ -26,24 +26,25 @@ function App() {
       }
     });
     return unsubscribe;
-  }, [dispatch]);
+  }, [dispatch]); //runs on componentmount
 
   return (
     <div className="app">
       <Router>
+        {" "}
         {!user ? (
           <LoginScreen />
         ) : (
           <Switch>
             <Route path="/profile">
               <ProfileScreen />
-            </Route>
+            </Route>{" "}
             <Route exact path="/">
               <HomeScreen />
-            </Route>
+            </Route>{" "}
           </Switch>
-        )}
-      </Router>
+        )}{" "}
+      </Router>{" "}
     </div>
   );
 }

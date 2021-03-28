@@ -2,12 +2,12 @@ import React from "react";
 import Nav from "../components/Nav";
 import { useSelector } from "react-redux";
 import { selectUser } from "../features/userSlice";
-import { auth } from "../firebase";
+import { auth } from "../firebase"; //local firebase file
 import PlansScreen from "../components/PlansScreen";
 import "../App.css";
 
 function ProfileScreen() {
-  const user = useSelector(selectUser);
+  const user = useSelector(selectUser); // get user email from redux
   return (
     <div className="profileScreen">
       <Nav />
@@ -21,7 +21,7 @@ function ProfileScreen() {
           <div className="profileScreen__details">
             <h2>
               <span className="userNamespan">User's Email: </span>
-              {user.email}
+              {user.email} {/**user email from redux */}
             </h2>
             <div className="profileScreen__plans">
               <PlansScreen />

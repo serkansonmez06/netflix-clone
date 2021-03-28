@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
-import { auth } from "../firebase";
+import { auth } from "../firebase"; // local firebase file
 
 function SignUpScreen() {
-  const emailRef = useRef(null);
-  const passwordRef = useRef(null);
+  const emailRef = useRef(null); //to capture the value inside input field
+  const passwordRef = useRef(null); //to capture the value inside input field
 
   const register = (e) => {
     e.preventDefault();

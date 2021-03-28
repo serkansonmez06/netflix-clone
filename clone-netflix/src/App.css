@@ -65,6 +65,7 @@
     color: #000;
     background-color: #e6e6e6;
     transition: all 0.2s;
+    outline: none;
 }
 
 
@@ -170,23 +171,6 @@
     }
 }
 
-.loginScreen {
-    position: relative;
-    height: auto;
-    background: url("http://mppmduse2pmpovwapp.azurewebsites.net/wp-content/uploads/2019/09/netflix-background-9.jpg") center center no-repeat;
-    /* background-position: center;
-    background-repeat: no-repeat; */
-    background-size: 100% 100%;
-    max-width: 100%;
-}
-
-@media only screen and (min-width: 300px) {
-    .loginScreen {
-        background-image: url('http://mppmduse2pmpovwapp.azurewebsites.net/wp-content/uploads/2019/09/netflix-background-9.jpg') center center no-repeat;
-        max-height: 100%;
-    }
-}
-
 .loginScreen__logo {
     position: fixed;
     left: 0;
@@ -206,14 +190,15 @@
     font-weight: 600;
     border: none;
     cursor: pointer;
+    outline: none;
 }
 
 .loginScreen__gradient {
     width: 100%;
     z-index: 1;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.4);
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    /* background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%); */
 }
 
 .loginScreen__body {
@@ -264,10 +249,64 @@
     color: white;
     background-color: red;
     border: none;
+    overflow: auto;
 }
 
 .loginScreen__input {
     margin: 20px;
+}
+
+@media screen and (max-width: 1480px) and (orientation: landscape) {
+    .loginScreen {
+        position: relative;
+        height: auto;
+        background: url("http://mppmduse2pmpovwapp.azurewebsites.net/wp-content/uploads/2019/09/netflix-background-9.jpg") center center no-repeat;
+        /* background-position: center;
+        background-repeat: no-repeat; */
+        background-size: 100% 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .loginScreen {
+        background-image: url('http://mppmduse2pmpovwapp.azurewebsites.net/wp-content/uploads/2019/09/netflix-background-9.jpg') center center no-repeat;
+        height: 100vh;
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .loginScreen__input>form>input {
+        padding: 10px;
+        outline-width: 0;
+        height: 30px;
+        width: 30%;
+        border: none;
+        max-width: 600px;
+    }
+    .loginScreen_getStarted {
+        padding: 16px 5px;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #e50914;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        overflow: auto;
+    }
+    .loginScreen_getStarted:hover,
+    .loginScreen__button:hover {
+        background-color: #bd2121;
+        outline: none;
+    }
+}
+
+.signupScreen>form {
+    display: grid;
+    flex-direction: column;
+    width: 100%;
 }
 
 .signupScreen {
@@ -277,12 +316,6 @@
     margin-left: auto;
     margin-right: auto;
     background: rgba(0, 0, 0, 0.85);
-}
-
-.signupScreen>form {
-    display: grid;
-    flex-direction: column;
-    width: 100%;
 }
 
 .signupScreen>form>input {
@@ -304,6 +337,7 @@
     border: none;
     cursor: pointer;
     margin-top: 20px;
+    outline: none;
 }
 
 .signupScreen>form>h1 {
@@ -320,9 +354,19 @@
     text-decoration: underline;
 }
 
+@media only screen and (min-width: 300px) {
+    .signupScreen>form {
+        display: grid;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
 .profileScreen {
     height: 100vh;
     color: white;
+    background-color: black;
+    overflow: auto;
 }
 
 .profileScreen_body {
@@ -403,12 +447,22 @@
     font-weight: 600;
     border: none;
     cursor: pointer;
+    outline: none;
 }
 
 .plansScreen__plan--disable>button {
     background-color: gray !important;
+    outline: none;
 }
 
 .userNamespan {
     color: black
+}
+
+@media screen and (max-height: 300px) {
+    .profileScreen {
+        height: 100vh;
+        background-color: black;
+        overflow: auto;
+    }
 }
